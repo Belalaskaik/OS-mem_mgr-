@@ -1,0 +1,53 @@
+//--------------------------------------------------------------------------------------------------------------------
+// OUTPUT from mem_mgr
+//--------------------------------------------------------------------------------------------------------------------
+log: 16916 0x4214 (pg: 66, off: 20)-->phy:    20 (frm:   0) (prv:   0)--> val:    0 == value:    0 --  + ----> pg_fault
+log: 62493 0xf41d (pg:244, off: 29)-->phy:   285 (frm:   1) (prv:   0)--> val:    0 == value:    0 --  + ----> pg_fault
+log: 30198 0x75f6 (pg:117, off:246)-->phy:   758 (frm:   2) (prv:   1)--> val:   29 == value:   29 --  + ----> pg_fault
+log: 53683 0xd1b3 (pg:209, off:179)-->phy:   947 (frm:   3) (prv:   2)--> val:  108 == value:  108 --  + ----> pg_fault
+log: 40185 0x9cf9 (pg:156, off:249)-->phy:  1273 (frm:   4) (prv:   3)--> val:    0 == value:    0 --  + ----> pg_fault
+
+log: 28781 0x706d (pg:112, off:109)-->phy:  1389 (frm:   5) (prv:   4)--> val:    0 == value:    0 --  + ----> pg_fault
+log: 24462 0x5f8e (pg: 95, off:142)-->phy:  1678 (frm:   6) (prv:   5)--> val:   23 == value:   23 --  + ----> pg_fault
+log: 48399 0xbd0f (pg:189, off: 15)-->phy:  1807 (frm:   7) (prv:   6)--> val:   67 == value:   67 --  + ----> pg_fault
+log: 64815 0xfd2f (pg:253, off: 47)-->phy:  2095 (frm:   8) (prv:   7)--> val:   75 == value:   75 --  + ----> pg_fault
+log: 18295 0x4777 (pg: 71, off:119)-->phy:  2423 (frm:   9) (prv:   8)--> val:  -35 == value:  -35 --  + ----> pg_fault
+
+// ...
+
+log: 34561 0x8701 (pg:135, off:  1)-->phy: 17921 (frm:  70) (prv:  69)--> val:    0 == value:    0 --  + ----> pg_fault
+log: 49213 0xc03d (pg:192, off: 61)-->phy:  8509 (frm:  33) (prv:  70)--> val:    0 == value:    0 --  +    HIT!
+log: 36922 0x903a (pg:144, off: 58)-->phy: 18234 (frm:  71) (prv:  70)--> val:   36 == value:   36 --  + ----> pg_fault
+log: 59162 0xe71a (pg:231, off: 26)-->phy: 10266 (frm:  40) (prv:  71)--> val:   57 == value:   57 --  +    HIT!
+log: 50552 0xc578 (pg:197, off:120)-->phy: 18552 (frm:  72) (prv:  71)--> val:    0 == value:    0 --  + ----> pg_fault
+
+// ...
+
+log: 11036 0x2b1c (pg: 43, off: 28)-->phy: 39964 (frm: 156) (prv: 243)--> val:    0 == value:    0 --  +    HIT!
+log: 30557 0x775d (pg:119, off: 93)-->phy: 16221 (frm:  63) (prv: 243)--> val:    0 == value:    0 --  +    HIT!
+log: 23453 0x5b9d (pg: 91, off:157)-->phy: 20637 (frm:  80) (prv: 243)--> val:    0 == value:    0 --  +    HIT!
+log: 49847 0xc2b7 (pg:194, off:183)-->phy: 31671 (frm: 123) (prv: 243)--> val:  -83 == value:  -83 --  +    HIT!
+log: 30032 0x7550 (pg:117, off: 80)-->phy:   592 (frm:   2) (prv: 243)--> val:    0 == value:    0 --  +    HIT!
+
+log: 48065 0xbbc1 (pg:187, off:193)-->phy: 25793 (frm: 100) (prv: 243)--> val:    0 == value:    0 --  +    HIT!
+log:  6957 0x1b2d (pg: 27, off: 45)-->phy: 26413 (frm: 103) (prv: 243)--> val:    0 == value:    0 --  +    HIT!
+log:  2301 0x08fd (pg:  8, off:253)-->phy: 35325 (frm: 137) (prv: 243)--> val:    0 == value:    0 --  +    HIT!
+log:  7736 0x1e38 (pg: 30, off: 56)-->phy: 57912 (frm: 226) (prv: 243)--> val:    0 == value:    0 --  +    HIT!
+log: 31260 0x7a1c (pg:122, off: 28)-->phy: 23324 (frm:  91) (prv: 243)--> val:    0 == value:    0 --  +    HIT!
+
+log: 17071 0x42af (pg: 66, off:175)-->phy:   175 (frm:   0) (prv: 243)--> val:  -85 == value:  -85 --  +    HIT!
+log:  8940 0x22ec (pg: 34, off:236)-->phy: 46572 (frm: 181) (prv: 243)--> val:    0 == value:    0 --  +    HIT!
+log:  9929 0x26c9 (pg: 38, off:201)-->phy: 44745 (frm: 174) (prv: 243)--> val:    0 == value:    0 --  +    HIT!
+log: 45563 0xb1fb (pg:177, off:251)-->phy: 46075 (frm: 179) (prv: 243)--> val:  126 == value:  126 --  +    HIT!
+log: 12107 0x2f4b (pg: 47, off: 75)-->phy:  2635 (frm:  10) (prv: 243)--> val:  -46 == value:  -46 --  +    HIT!
+
+
+Page Fault Percentage: 0.244%
+TLB Hit Percentage: 0.054%
+
+ALL logical ---> physical assertions PASSED!
+
+                ...done.
+//--------------------------------------------------------------------------------------------------------------------
+								
+mem_manager/mem_manager % 
